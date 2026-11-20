@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/cubeSolver/assets/cube-BiBD6LNv.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rubik's Cube Solver</title>
+    <script type="module" crossorigin src="/cubeSolver/assets/index-DLEued8Z.js"></script>
+    <link rel="stylesheet" crossorigin href="/cubeSolver/assets/index-DG5GSo9X.css">
+  </head>
+  <body>
+    <button type="button" id = "generateScrambleBtn">Generate Scramble</button>
+    <button type="button" id = "solveBtn">Solve</button>
+    <label id = "info" for="scrambleInput">Enter Scramble:</label>
+    <input type="text" id="scrambleInput" name="scrambleInput"></input>
+    <label id = "info" for="moveSpeedInput">Enter Speed: (ms)</label>
+    <input type="text" id="moveSpeedInput" name="moveSpeedInput"></input>
+    
+    <div>
+      <label id = "info" for="cubeSize">Cube Size: </label>
+      <button type="button" id = "2x2Btn">2x2</button>
+      <button type="button" id = "3x3Btn">3x3</button>
+      <label id = "info" for="cubeType">Cube Type: </label>
+      <button type="button" id = "coloredBtn">colored</button>
+      <button type="button" id = "mirrorBtn">mirror</button>
+    </div>
+    <div id="info">
+      <p>
+        Speed (ms): <span id="moveSpeedText"></span>
+          Scramble: <span id="scrambleText">None</span>
+      </p>
+      <!-- <p>Solution: <span id="solutionText">None</span></p> -->
+    </div>
+  </body>
+</html>
