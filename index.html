@@ -9,13 +9,20 @@
     <link rel="stylesheet" crossorigin href="/cubeSolver/assets/index-DG5GSo9X.css">
   </head>
   <body>
-    <button type="button" id = "generateScrambleBtn">Generate Scramble</button>
-    <button type="button" id = "solveBtn">Solve</button>
-    <label id = "info" for="scrambleInput">Enter Scramble:</label>
-    <input type="text" id="scrambleInput" name="scrambleInput"></input>
+    <div id="info">
+      <p>
+        Speed (ms): <span id="moveSpeedText"></span>
+        Scramble: <span id="scrambleText">None</span>
+      </p>
+      <!-- <p>Solution: <span id="solutionText">None</span></p> -->
+    </div>
+    
     <label id = "info" for="moveSpeedInput">Enter Speed: (ms)</label>
     <input type="text" id="moveSpeedInput" name="moveSpeedInput"></input>
+    <label id = "info" for="scrambleInput">Enter Scramble:</label>
+    <input type="text" id="scrambleInput" name="scrambleInput"></input>
     
+
     <div>
       <label id = "info" for="cubeSize">Cube Size: </label>
       <button type="button" id = "2x2Btn">2x2</button>
@@ -24,12 +31,11 @@
       <button type="button" id = "coloredBtn">colored</button>
       <button type="button" id = "mirrorBtn">mirror</button>
     </div>
-    <div id="info">
-      <p>
-        Speed (ms): <span id="moveSpeedText"></span>
-          Scramble: <span id="scrambleText">None</span>
-      </p>
-      <!-- <p>Solution: <span id="solutionText">None</span></p> -->
+
+    <div>
+      <button type="button" id = "generateScrambleBtn">Generate Scramble</button>
+      <button type="button" id = "solveBtn">Solve</button>
     </div>
+    
   </body>
 </html>
